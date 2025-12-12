@@ -9,9 +9,9 @@ import numpy as np
 import librosa
 
 # Import our model components
-from audio_encoder import AudioEncoder
-from anomaly_extractor import AnomalyFeatureExtractor
-from classifier import SimpleClassifier, DeepfakeDetector
+from model.audio_encoder import AudioEncoder
+from model.anomaly_extractor import AnomalyFeatureExtractor
+from model.classifier import SimpleClassifier, DeepfakeDetector
 
 
 
