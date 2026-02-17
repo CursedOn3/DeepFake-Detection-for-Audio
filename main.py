@@ -366,9 +366,9 @@ def main():
             result = detector.check_audio(audio_file, args.threshold)
             
             if 'error' in result:
-                print(f"❌ {os.path.basename(audio_file)}: {result['error']}")
+                print(f"[ERROR] {os.path.basename(audio_file)}: {result['error']}")
             else:
-                icon = "🔴" if result['label'] == "FAKE" else "🟢"
+                icon = "[FAKE]" if result['label'] == "FAKE" else "[REAL]"
                 print(f"{icon} {os.path.basename(audio_file)}")
                 print(f"   Label: {result['label']}")
                 print(f"   Score: {result['fake_score']:.4f}")
@@ -390,9 +390,9 @@ def main():
             print("=" * 40)
             
             if result['label'] == "FAKE":
-                print("\n⚠️  WARNING: This audio is likely FAKE/SYNTHETIC")
+                print("\n[!] WARNING: This audio is likely FAKE/SYNTHETIC")
             else:
-                print("\n✅ This audio appears to be REAL/AUTHENTIC")
+                print("\n[+] This audio appears to be REAL/AUTHENTIC")
     
     print("\nDone!")
 

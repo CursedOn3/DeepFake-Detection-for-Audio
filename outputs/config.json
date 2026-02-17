@@ -1,0 +1,21 @@
+{
+    "data_dir": "E:\\archive\\for-2sec\\for-2seconds",
+    "output_dir": "outputs/",
+    "sample_rate": 16000,
+    "n_mels": 80,
+    "max_audio_length": 5.0,
+    "batch_size": 16,
+    "num_epochs": 50,
+    "learning_rate": 0.0001,
+    "weight_decay": 1e-05,
+    "num_workers": 4,
+    "cnn_size": 256,
+    "num_cnn_layers": 2,
+    "embedding_size": 256,
+    "num_heads": 8,
+    "num_transformer_layers": 4,
+    "feedforward_size": 1024,
+    "dropout_rate": 0.1,
+    "anomaly_feature_size": 40,
+    "hidden_size": 256
+}

@@ -9,11 +9,12 @@ This package contains the model components:
 
 from .audio_encoder import AudioEncoder
 from .anomaly_extractor import AnomalyFeatureExtractor
-from .classifier import DeepfakeClassifier, DeepfakeDetectionModel
+from .classifier import SimpleClassifier, DeepfakeDetector, DeeperClassifier
 
 __all__ = [
     'AudioEncoder',
     'AnomalyFeatureExtractor', 
-    'DeepfakeClassifier',
-    'DeepfakeDetectionModel'
+    'SimpleClassifier',
+    'DeepfakeDetector',
+    'DeeperClassifier'
 ]
